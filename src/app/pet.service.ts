@@ -54,7 +54,7 @@ export class PetService {
   }
 
   /* GET heroes whose name contains search term */
-  searchPets(term: string): Observable<Pet[]> {
+  /* searchPets(term: string): Observable<Pet[]> {
     if (!term.trim()) {
       // if not search term, return empty hero array.
       return of([]);
@@ -65,7 +65,7 @@ export class PetService {
          this.log(`no pets matching "${term}"`)),
       catchError(this.handleError<Pet[]>('searchPets', []))
     );
-  }
+  } */
 
   //////// Save methods //////////
 

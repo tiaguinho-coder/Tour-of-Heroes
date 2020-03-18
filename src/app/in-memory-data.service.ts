@@ -32,7 +32,7 @@ export class InMemoryDataService implements InMemoryDbService {
       { id: 19, name: 'Madogma' },
       { id: 20, name: 'Tornacat' }
     ];
-    return {heroes, pets};
+    return {pets, heroes};
   }
 
   // Overrides the genId method to ensure that a hero always has an id.
@@ -43,4 +43,8 @@ export class InMemoryDataService implements InMemoryDbService {
   genId(heroes: Hero[]): number {
     return heroes.length > 0 ? Math.max(...heroes.map(hero => hero.id)) + 1 : 11;
   }
+  genId(pets: Pet[]) : number {
+    return pets.length > 0 ? Math.max(...pets.map(pet => pet.id)) + 1 : 11;
+  }
+
 }
