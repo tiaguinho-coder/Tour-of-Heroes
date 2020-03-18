@@ -21,16 +21,16 @@ export class InMemoryDataService implements InMemoryDbService {
       { id: 20, name: 'Tornado' }
     ];
     const pets = [
-      { id: 11, name: 'Dr Bone' },
-      { id: 12, name: 'Narcat' },
-      { id: 13, name: 'Bombirdsto' },
-      { id: 14, name: 'Celerifish' },
-      { id: 15, name: 'Magnecat' },
-      { id: 16, name: 'RubberTurtle' },
-      { id: 17, name: 'Dynafish' },
-      { id: 18, name: 'Mr IQ' },
-      { id: 19, name: 'Madogma' },
-      { id: 20, name: 'Tornacat' }
+      { id: 0, name: 'Dr Bone' },
+      { id: 1, name: 'Narcat' },
+      { id: 2, name: 'Bombirdsto' },
+      { id: 3, name: 'Celerifish' },
+      { id: 4, name: 'Magnecat' },
+      { id: 5, name: 'RubberTurtle' },
+      { id: 6, name: 'Dynafish' },
+      { id: 7, name: 'Mr IQ' },
+      { id: 8, name: 'Madogma' },
+      { id: 9, name: 'Tornacat' }
     ];
     return {pets, heroes};
   }
