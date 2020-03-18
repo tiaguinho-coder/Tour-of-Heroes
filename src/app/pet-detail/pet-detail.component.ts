@@ -34,7 +34,7 @@ export class PetDetailComponent implements OnInit {
   }
 
  save(): void {
-    this.petService.updateHero(this.pet)
+    this.petService.updatePet(this.pet)
       .subscribe(() => this.goBack());
   }
 }
