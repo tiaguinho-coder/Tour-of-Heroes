@@ -31,7 +31,7 @@ export class PetService {
   }
 
   /** GET hero by id. Return `undefined` when id not found */
-  getHeroNo404<Data>(id: number): Observable<Pet> {
+  getPetNo404<Data>(id: number): Observable<Pet> {
     const url = `${this.petsUrl}/?id=${id}`;
     return this.http.get<Pet[]>(url)
       .pipe(
@@ -45,7 +45,7 @@ export class PetService {
   }
 
   /** GET hero by id. Will 404 if id not found */
-  getHero(id: number): Observable<Pet> {
+  getPet(id: number): Observable<Pet> {
     const url = `${this.petsUrl}/${id}`;
     return this.http.get<Pet>(url).pipe(
       tap(_ => this.log(`fetched pet id=${id}`)),
