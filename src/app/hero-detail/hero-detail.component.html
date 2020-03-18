@@ -10,7 +10,9 @@
   <div>
     <label>Pet name:</label>
     <div *ngIf='hero.pet != null'>
+      <a routerLink="/detailPet/{{pet.id}}">
         {{hero.pet.name}}
+      </a>
     </div>
   </div>
   <ul class="pets">
