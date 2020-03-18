@@ -4,8 +4,10 @@
       routerLink="/detail/{{hero.id}}">
     <div class="module hero">
       <h4>{{hero.name}}</h4>
+      <div *ngIf='hero.pet != null'>
+        <h5>{{hero.pet.name}}</h5>
+      </div>
     </div>
   </a>
 </div>
-
 <app-hero-search></app-hero-search>
