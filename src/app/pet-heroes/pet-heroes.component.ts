@@ -1,15 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 
-import { Pet } from '../pet-heroes';
+import { Pet } from '../pet';
 import { PetService } from '../pet.service';
 import { MessageService } from '../message.service';
 
 @Component({
   selector: 'app-heroes',
   templateUrl: './pet-heroes.component.html',
-  styleUrls: ['./heroes.component.css']
+  styleUrls: ['./pet-heroes.component.css']
 })
-export class HeroesComponent implements OnInit {
+export class PetHeroesComponent implements OnInit {
 
   selectedPet: Pet;
 
