@@ -9,16 +9,16 @@ import { Injectable } from '@angular/core';
 export class InMemoryDataService implements InMemoryDbService {
   createDb() {
     const heroes = [
-      { id: 11, name: 'Dr Nice' },
-      { id: 12, name: 'Narco' },
-      { id: 13, name: 'Bombasto' },
-      { id: 14, name: 'Celeritas' },
-      { id: 15, name: 'Magneta' },
-      { id: 16, name: 'RubberMan' },
-      { id: 17, name: 'Dynama' },
-      { id: 18, name: 'Dr IQ' },
-      { id: 19, name: 'Magma' },
-      { id: 20, name: 'Tornado' }
+      { id: 0, name: 'Dr Nice', pet: null},
+      { id: 1, name: 'Narco', pet: null },
+      { id: 2, name: 'Bombasto', pet: null },
+      { id: 3, name: 'Celeritas', pet: null },
+      { id: 4, name: 'Magneta', pet: null },
+      { id: 5, name: 'RubberMan', pet: null },
+      { id: 6, name: 'Dynama', pet: null },
+      { id: 7, name: 'Dr IQ', pet: null },
+      { id: 8, name: 'Magma', pet: null },
+      { id: 9, name: 'Tornado', pet: null }
     ];
     const pets = [
       { id: 0, name: 'Dr Bone' },
@@ -41,7 +41,7 @@ export class InMemoryDataService implements InMemoryDbService {
   // if the heroes array is not empty, the method below returns the highest
   // hero id + 1.
  genId<T extends Hero | Pet>(myTable: T[]): number {
-  return myTable.length > 0 ? Math.max(...myTable.map(t => t.id)) + 1 : 11;
+  return myTable.length > 0 ? Math.max(...myTable.map(t => t.id)) + 1 : 0;
 }
 
 }
